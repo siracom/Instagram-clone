@@ -1,0 +1,143 @@
+.welcome_login {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 2% 15%;
+}
+@media (max-width: 1100px) {
+  .welcome_login {
+    display: flex;
+    align-content: center;
+    padding: 2% 7%;
+    flex-direction: column;
+  }
+  .welcome_login_left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .welcome_login_right {
+    border-radius: 10px;
+    cursor: all-scroll;
+    max-height: 100vh;
+    padding: 5%;
+    margin-top: 20px;
+    margin-left: 0px !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+  .welcome_login_right .card {
+    padding: 20px;
+  }
+}
+.welcome_login_left {
+  width: 100%;
+  display: flex;
+  flex: 0.6;
+  flex-direction: column;
+}
+.welcome_login_right {
+  border-radius: 10px;
+  cursor: all-scroll;
+  height: 80vh;
+  flex: 0.4;
+  overflow: auto;
+  margin-left: 20px;
+  display: grid;
+  justify-content: center;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); */
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.welcome_login_right:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #666;
+}
+.welcome_login_newuser {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 90%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.welcome_login_left span {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 5px 25px;
+  position: relative;
+  margin-left: 0;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.25), 0 5px 5px 1px rgba(0, 0, 0, 0.12);
+}
+.welcome_login_newuser:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.welcome_login_existinguser:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.welcome_login_left h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.welcome_login_existinguser {
+  border: 1px solid #ddd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 90%;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.welcome_login_left span:after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  left: -15px;
+  top: 10px;
+  border-bottom: 15px solid transparent;
+  border-top-left-radius: 3px;
+  border-right: 15px solid #fff;
+}
+
+.gradient-background {
+  background: linear-gradient(62deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  height: 100%;
+  background-repeat: repeat;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

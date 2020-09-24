@@ -1,0 +1,20 @@
+.posts {
+  padding: 20px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.posts_right {
+  margin-left: 20px;
+}
+
+.arrow_button {
+  position: fixed;
+  right: 5vw;
+  bottom: 5vh;
+}
+
+.arrow_button .MuiSvgIcon-root {
+  font-size: 50px !important;
+}
